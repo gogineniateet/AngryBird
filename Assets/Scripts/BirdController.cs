@@ -20,11 +20,7 @@ public class BirdController : MonoBehaviour
         birdStartPosition = rb.position;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
     private void OnMouseDown() 
     {
         GetComponent<SpriteRenderer>().color = Color.red;

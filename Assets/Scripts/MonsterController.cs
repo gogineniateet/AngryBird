@@ -7,19 +7,6 @@ public class MonsterController : MonoBehaviour
     public Sprite  newsprite;
     public static int score;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         BirdController birdcontroller = collision.gameObject.GetComponent<BirdController>();
@@ -28,8 +15,7 @@ public class MonsterController : MonoBehaviour
             MonsterDeath();
             
             // Destroy(gameObject);
-        }
-       
+        }       
     }
 
     public void MonsterDeath()
@@ -40,6 +26,5 @@ public class MonsterController : MonoBehaviour
         score = score + 10;
         Debug.Log(score);
     }
-
 
 }
